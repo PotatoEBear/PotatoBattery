@@ -1,14 +1,297 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <img
-            src="https://github.com/hackclub/dinosaurs/raw/main/smart_dinosaur_docs.png"
-        />
-        <h1>Ryan loves stroking bananas</h1>
-        <p> Coder Potato </p>
-        <p>Will code for White Sticky Stuff</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Everything you need to know about Rocket League. Tips, news, gameplay details, player profiles, and more!">
+    <title>Rocket League Coaching From PotatoEBear375f</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222222;
+            color: white;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #f8c12d;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #f8c12d;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section h2 {
+            color: #f8c12d;
+            font-size: 2em;
+        }
+
+        section p, section ul {
+            font-size: 1.1em;
+        }
+
+        .carousel {
+            position: relative;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .carousel-images {
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            padding: 15px;
+            color: white;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #000;
+            color: #f8c12d;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-links a {
+            color: #f8c12d;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+
+        .contact-form {
+            background-color: #333;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #f8c12d;
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 1.2em;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .contact-form button:hover {
+            background-color: #e09b18;
+        }
+
+        .player-profile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .player-profile img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .player-profile-info {
+            max-width: 70%;
+        }
+
+        .player-profile-info h3 {
+            font-size: 1.8em;
+            color: #f8c12d;
+        }
+
+        .player-profile-info p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .player-profile-info .rank {
+            font-size: 1.2em;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rocket League Hub</h1>
+    <p>Your ultimate source for Rocket League news, gameplay tips, and player profiles!</p>
+</header>
+
+<nav>
+    <a href="#intro">Introduction</a>
+    <a href="#gameplay">Gameplay</a>
+    <a href="#tips">Tips & Tricks</a>
+    <a href="#news">Latest News</a>
+    <a href="#player-profiles">Player Profiles</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="intro">
+    <h2>What is Rocket League?</h2>
+    <p>Rocket League is an action-packed, high-speed game that combines soccer with acrobatic vehicles. Developed by Psyonix, players drive customizable cars to hit a giant ball into their opponent's goal. It’s all about control, strategy, and teamwork!</p>
+</section>
+
+<section id="gameplay">
+    <h2>Gameplay Overview</h2>
+    <p>The game features both casual and competitive modes, with players participating in 1v1, 2v2, and 3v3 matches. The physics-based mechanics allow for incredible car control, aerial maneuvers, and exciting team plays. Whether you're playing ranked or just having fun, Rocket League offers a thrilling experience every time.</p>
+</section>
+
+<section id="tips">
+    <h2>Pro Tips & Tricks</h2>
+    <ul>
+        <li><strong>Master the basics:</strong> Focus on car control, positioning, and rotating properly with your teammates.</li>
+        <li><strong>Aerials:</strong> Train yourself to perform powerful aerial shots to gain the upper hand during matches.</li>
+        <li><strong>Boost management:</strong> Learn when to boost and when to conserve it for maximum effectiveness.</li>
+    </ul>
+</section>
+
+<section id="news">
+    <h2>Rocket League News</h2>
+    <p>Stay updated with the latest updates, tournaments, and events in the Rocket League world.</p>
+    <p><strong>New Patch Released:</strong> The latest patch includes new car customization options, updated maps, and minor bug fixes. Check the official Rocket League website for full patch notes.</p>
+</section>
+
+<section id="player-profiles">
+    <h2>Famous Rocket League Players</h2>
+    <div class="player-profile">
+        <img src="https://via.placeholder.com/120" alt="Player Image">
+        <div class="player-profile-info">
+            <h3>SquishyMuffinz</h3>
+            <p>SquishyMuffinz is known for his incredible mechanical skill and mastery of aerial shots. A fan favorite and consistently one of the top players in Rocket League esports.</p>
+            <p class="rank">Rank: Supersonic Legend</p>
+        </div>
+    </div>
+    <div class="player-profile">
+        <img src="https://via.placeholder.com/120" alt="Player Image">
+        <div class="player-profile-info">
+            <h3>JSTN</h3>
+            <p>JSTN is widely recognized for his clutch plays and outstanding team play during high-stakes Rocket League events. He’s a key player for NRG Esports.</p>
+            <p class="rank">Rank: Supersonic Legend</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <h3>Get in touch with us for any inquiries, feedback, or collaboration opportunities!</h3>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Rocket League Hub | All Rights Reserved</p>
+    <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+    </div>
+</footer>
+
+<script>
+    // Carousel logic for image sliding
+    let index = 0;
+    const images = document.querySelectorAll('.carousel-images img');
+    const totalImages = images.length;
+
+    document.querySelector('.next').addEventListener('click', () => {
+        index = (index + 1) % totalImages;
+        updateCarousel();
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        index = (index - 1 + totalImages) % totalImages;
+        updateCarousel();
+    });
+
+    function updateCarousel() {
+        for (let i = 0; i < totalImages; i++) {
+            images[i].style.transform = `translateX(-${index * 100}%)`;
+        }
+    }
+</script>
+
+</body>
 </html>
